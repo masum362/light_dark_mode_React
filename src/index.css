@@ -1,0 +1,85 @@
+.light-theme{
+  --main-bg:rgb(255, 251, 251);
+  --heading-col:rgb(223, 0, 0);
+  --pera-col:rgb(7, 3, 226);
+  --toggle-col:rgb(5, 4, 4);
+}
+
+.dark-theme{
+  --main-bg:rgb(8, 7, 7);
+  --heading-col:rgb(252, 234, 234);
+  --pera-col:rgb(91, 238, 157);
+  --toggle-col:rgb(226, 223, 223);
+
+}
+
+body{
+  background-color: var(--main-bg);  
+  width: 200%; 
+ }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width:100%;
+  height: 50px;
+  background-color: var(--main-bg);
+  padding: 10px;
+  position: sticky;
+  
+}
+nav{
+  display: flex;
+  align-items: center;
+  
+}
+nav > div > h1{
+  color: var(--heading-col);
+}
+div{
+  width: 50%;
+}
+.nav-item{
+  display: flex;
+  gap: 20px;
+}
+.nav-item > li {
+  list-style: none;
+}
+.nav-item > li > a {
+  text-decoration: none;
+  color: var(--pera-col);
+}
+
+section{
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+section div {
+  width: 50%;
+  height: auto;
+  margin: 10px 20px;
+
+}
+#toggle-btn{
+  color: var(--toggle-col);
+}
+section div h1{
+  color: var(--heading-col);
+}
+section div p{
+  color: var(--pera-col);
+}
+section div img{
+  width: 30%;
+  border-radius: 50%;
+  border: 1px solid var(--heading-col);
+}
+#toggle-btn{
+  cursor: pointer;
+}
